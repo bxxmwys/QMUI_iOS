@@ -323,14 +323,14 @@ static char kAssociatedObjectKey_viewController;
 
 @implementation UIViewController (QMUI_View)
 
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        ExtendImplementationOfVoidMethodWithoutArguments([UIViewController class], @selector(viewDidLoad), ^(UIViewController *selfObject) {
-            selfObject.view.qmui_viewController = selfObject;
-        });
-    });
-}
+//+ (void)load {
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        ExtendImplementationOfVoidMethodWithoutArguments([UIViewController class], @selector(viewDidLoad), ^(UIViewController *selfObject) {
+//            selfObject.view.qmui_viewController = selfObject;
+//        });
+//    });
+//}
 
 @end
 
